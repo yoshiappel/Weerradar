@@ -28,8 +28,12 @@ body {
     padding: 1rem;
 }
 
+.bron {
+    font-style: italic;
+}
+
 .output {
-    margin: 3rem;
-    padding: 1rem;
+    margin: 4rem;
+    padding: 2rem;
     background-color: #f1f1f1;
 }
