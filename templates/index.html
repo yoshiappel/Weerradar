@@ -13,19 +13,21 @@
             <a href="/">Home</a>
             <a href="/get">Keuze 1</a>
             <a href="/get">Keuze 2</a>
-            <a href="/3">Keuze 3</a>
+            <a href="/Weerbericht">Weerbericht</a>
         </div>
     </nav>
-    <p>aaa</p>
-    <br>
-    {% if datum is defined %}
-        <div class="output">
-            <div class="bron">
-                <p>{{ datum }} door {{ author }}</p> 
+    <div class="content">
+        {% if date is defined %}
+            <div class="output">
+                <div class="bron">
+                    <p>{{ date }} om {{ time }} door {{ author }}</p> 
+                </div>
+                <h1>{{ titel }}</h1>
+                <div class="weerbericht">
+                    {{ weerbericht | safe}}
+                </div>
             </div>
-            <h1>{{ titel }}</h1>
-            <p>{{ weerbericht }}</p>
-        </div>
-    {% endif %}
+        {% endif %}
+    </div>
 </body>
 </html>

@@ -18,7 +18,7 @@ body {
     margin: 1rem;
     text-decoration: none;
     color: #000000;
-    transition: all .5s ease;
+    transition: background-color, border-radius .5s ease;
     border-radius: 5px;
 }
 
@@ -28,6 +28,13 @@ body {
     padding: 1rem;
 }
 
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
 .bron {
     font-style: italic;
 }
@@ -35,5 +42,12 @@ body {
 .output {
     margin: 4rem;
     padding: 2rem;
+    max-width: fit-content;
     background-color: #f1f1f1;
+}
+
+.weerbericht{
+    white-space: pre-line;
+    line-height: 1.6;
+    max-width: 700px;
 }
